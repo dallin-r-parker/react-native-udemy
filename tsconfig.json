@@ -3,6 +3,10 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react-native",
     "lib": ["dom", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "@ui*": ["./src/components*"]
+    },
     "moduleResolution": "node",
     "noEmit": true,
     "skipLibCheck": true,
