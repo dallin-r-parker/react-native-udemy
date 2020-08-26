@@ -1,10 +1,12 @@
 import React from "react";
-import { Text, View, Button } from "react-native";
+import { Text, Button } from "react-native";
 import styled from "styled-components/native";
+import { List } from "@ui/list";
 
-export const Home = ({ navigation }) => (
+export const Home: React.FC<{ navigation: any }> = ({ navigation }) => (
   <Container>
     <Text>Hello from Home Page</Text>
+    <List />
     <Button title="Login" onPress={() => navigation.navigate("Login")} />
   </Container>
 );
