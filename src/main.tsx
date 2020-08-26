@@ -1,26 +1,20 @@
 import React from "react";
-import { Text } from "react-native";
-import { StatusBar } from "expo-status-bar";
-import styled from "styled-components/native";
 import { registerRootComponent } from "expo";
-import { List } from "@ui/list";
 
-const App = () => {
-  return (
-    <Container>
-      <Text>Working</Text>
-      <List />
-      {/* <Home title="Home"></Home> */}
-      <StatusBar style="auto" />
-    </Container>
-  );
-};
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { Home } from "@screen/Home";
+import { Login } from "@screen/Login";
 
-const Container: React.FC = styled.View`
-  flex: 1;
-  background-color: #fff;
-  align-items: center;
-  justify-content: center;
-`;
+const Stack = createStackNavigator();
+
+const App = () => (
+  <NavigationContainer>
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Login" component={Login} />
+    </Stack.Navigator>
+  </NavigationContainer>
+);
 
 registerRootComponent(App);
