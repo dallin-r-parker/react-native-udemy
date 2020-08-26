@@ -20,6 +20,7 @@ module.exports = function (api) {
           ],
           alias: {
             "@ui": "./src/components",
+            "@screen": "./src/screens",
           },
         },
       ],

@@ -5,7 +5,8 @@
     "lib": ["dom", "esnext"],
     "baseUrl": ".",
     "paths": {
-      "@ui*": ["./src/components*"]
+      "@ui*": ["./src/components*"],
+      "@screen*": ["./src/screens*"]
     },
     "moduleResolution": "node",
     "noEmit": true,
