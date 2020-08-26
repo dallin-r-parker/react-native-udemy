@@ -3,7 +3,7 @@ import { Text } from "react-native";
 import { StatusBar } from "expo-status-bar";
 import styled from "styled-components/native";
 import { registerRootComponent } from "expo";
-import { List } from "@ui/List";
+import { List } from "@ui/list";
 
 const App = () => {
   return (
