@@ -1,11 +1,10 @@
 import React from "react";
-import { Text, View, Button } from "react-native";
+import { View, Text } from "react-native";
 import styled from "styled-components/native";
 
-export const Home = ({ navigation }) => (
+export const Login = () => (
   <Container>
-    <Text>Hello from Home Page</Text>
-    <Button title="Login" onPress={() => navigation.navigate("Login")} />
+    <Text>Hello from Login Page</Text>
   </Container>
 );
 
