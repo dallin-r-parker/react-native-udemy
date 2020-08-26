@@ -10,7 +10,7 @@ const App = () => {
     <Container>
       <Text>Working</Text>
       <List />
-      {/* <Home title="Home"></Home> */}
+
       <StatusBar style="auto" />
     </Container>
   );
